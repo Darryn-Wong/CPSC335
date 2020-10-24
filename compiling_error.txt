@@ -1,0 +1,57 @@
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp: In function 'void test_sorting_utilities()':
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:111:36: error: 'size' is not a member of 'std'
+  111 |   single_issorted_test(test1, std::size(test1));                // NB: C++17 +
+      |                                    ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:112:36: error: 'size' is not a member of 'std'
+  112 |   single_issorted_test(test2, std::size(test2));
+      |                                    ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:113:36: error: 'size' is not a member of 'std'
+  113 |   single_issorted_test(test3, std::size(test3));
+      |                                    ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:115:40: error: 'size' is not a member of 'std'
+  115 |   single_issorted_test(test_str1, std::size(test_str1));
+      |                                        ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:116:40: error: 'size' is not a member of 'std'
+  116 |   single_issorted_test(test_str2, std::size(test_str2));
+      |                                        ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:117:40: error: 'size' is not a member of 'std'
+  117 |   single_issorted_test(test_str3, std::size(test_str3));
+      |                                        ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:120:39: error: 'size' is not a member of 'std'
+  120 |   single_issorted_test(test2, 2, std::size(test2));
+      |                                       ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:121:43: error: 'size' is not a member of 'std'
+  121 |   single_issorted_test(test_str2, 2, std::size(test_str2));
+      |                                           ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:126:43: error: 'size' is not a member of 'std'
+  126 |   test_sort("test1 is now: ", test1, std::size(test1), fwd_comp_int, sel_sort);
+      |                                           ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:127:43: error: 'size' is not a member of 'std'
+  127 |   test_sort("test2 is now: ", test2, std::size(test2), fwd_comp_int, sel_sort);
+      |                                           ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:128:43: error: 'size' is not a member of 'std'
+  128 |   test_sort("test3 is now: ", test3, std::size(test3), fwd_comp_int, sel_sort);
+      |                                           ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:133:53: error: 'size' is not a member of 'std'
+  133 |   test_sort("\ntest_str1 is now: ", test_str1, std::size(test_str1), rev_str, ins_sort);
+      |                                                     ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:134:51: error: 'size' is not a member of 'std'
+  134 |   test_sort("test_str2 is now: ", test_str2, std::size(test_str2), rev_str, ins_sort);
+      |                                                   ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:135:51: error: 'size' is not a member of 'std'
+  135 |   test_sort("test_str3 is now: ", test_str3, std::size(test_str3), rev_str, ins_sort);
+      |                                                   ^~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp: In function 'int main(int, const char**)':
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:210:77: error: 'merge_sort' is not a template
+  210 |   test_sort_from_file("merge", "words3.txt", fwd_comparator<std::string>(), merge_sort<std::string>());
+      |                                                                             ^~~~~~~~~~
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:212:99: error: 'merge_bu_sort' was not declared in this scope; did you mean 'merge_sort'?
+  212 |   test_sort_from_file("merge_bottom_up -- reversed", "words3.txt", rev_comparator<std::string>(), merge_bu_sort<std::string>());
+      |                                                                                                   ^~~~~~~~~~~~~
+      |                                                                                                   merge_sort
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:212:124: error: expected primary-expression before '>' token
+  212 |   test_sort_from_file("merge_bottom_up -- reversed", "words3.txt", rev_comparator<std::string>(), merge_bu_sort<std::string>());
+      |                                                                                                                            ^
+C:\Users\a1222\OneDrive\Desktop\textbook\cpsc 335\merge_sort\sorts.cpp:212:126: error: expected primary-expression before ')' token
+  212 |   test_sort_from_file("merge_bottom_up -- reversed", "words3.txt", rev_comparator<std::string>(), merge_bu_sort<std::string>());
+      |                                                                                                                              ^
